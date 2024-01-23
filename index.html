@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula Javascript</title>
+</head>
+<body>
+    <script>
+        // var variavel = "variavel" // Variavel global
+        // let variavel2 = "variavel2"
+        // const constant = "constante" //É constante, não deve ser alterada.
+
+        // //Para demonstrar que: Ao 'var' ser global,
+        // //as alterações feitas dentro de condições ou funções,
+        // //alteram a declaração original da variavel.
+
+        // var greeter = "hello"
+        //     if(1 == 1){
+        //         var greeter = "I'm a 'var'"
+        //     }
+
+        //     document.write(greeter)
+
+        // //Para demonstrar que ao utilizar 'let' resolvemos este problema.
+
+        // let greeter2 = " - Hello"
+        //     if(1 == 1){
+        //         let greeter2 = "I'm a 'let'"
+        //     }
+
+        //     document.write(greeter2)
+
+        // //Tipos de variavel
+
+        // //o Javascrip não se importa se o numero é inteiro ou decimal,
+        // //coloca tudo como se fosse numa caixa 'number'
+
+        // let string = "String"
+        // let number = 10
+        // let boolean = true
+        // let object = {nome: 'carro' , ano:2023}
+        // let array = ["valor0","valor1","valor2","valor3","valor4", {}]
+        // let undefinedvar //Variavel não definida
+        // let nullvar = null;
+
+        // document.write(array[5])
+        // console.log(Number .MAX_VALUE)
+        // console.log(Number .MIN_VALUE)
+
+        // let nome = 'Cat '
+        // let sobrenome = 'Vieira'
+        // console.log(nome + ' ' + sobrenome)
+
+        // let nomeCompleto = nome.concat(sobrenome)
+        // console.log(nomeCompleto)
+
+        // let boasVindas = `Olá ${nomeCompleto}, bem-vind@!`
+        // console.log(boasVindas)
+
+        // let ano = "2023"
+        // let ano2 = 2023
+        // console.log(ano == ano2)//Compara se valor igual
+        // console.log(ano != ano2)//Compara se valor diferente
+        // console.log(ano !== ano2)//Compara se valor e tipo diferente
+        // console.log(ano === ano2)//Compara se valor e tipo igual
+
+        // let vetor = [1, true, {carro: 'Nome do Carro', ano:2023}, [1, 2, 3], 'vetor']
+        // console.log(vetor)
+
+
+        // //alterar valores dentro de objetos
+        // let carro = {
+        //     marca: "Toyotta",
+        //     modelo: "Corola",
+        //     ano: 2023,
+        //     usado: false
+        // }
+        // console.log(carro)
+
+        // carro.ano = 2024
+        // console.log(carro)
+
+        // carro['usado'] = true
+        // console.log(carro)
+
+ //--------------------------------------------------------------------
+        // //funções sem parametros
+        //     let olaMundo = function(){
+        //         console.log("Olá mundo")
+        //     }
+
+        //     let somarNumeros = function(){
+        //         let num1 = 10;
+        //         let num2 = 20;
+        //         return console.log(num1 + num2)
+        //     }
+        //     somarNumeros();
+
+        // //funções que esperam parametros
+        // let somarDoisNum = function(numero1, numero2){
+        //     let resultado = numero1 + numero2;
+        //     return resultado;
+        // }
+
+        // let resultado = somarDoisNum(5, 5)
+        // console.log(resultado)
+
+        // resultado = somarDoisNum(19, 5)
+        // console.log(resultado)
+
+        //--------------------------------------------------------
+
+        // //Condicionais If - Else
+
+        // let executa = true;
+        // if(executa){
+        //     console.log("A executar código...")
+        // }else{
+        //     console.log("Não foi possível executar...")
+        // }
+
+        // executa = false;
+        // if(executa){
+        //     console.log("A executar código...")
+        // }else{
+        //     console.log("Não foi possível executar...")
+        // }
+
+        // let num1 = 10;
+        // let num2 = 20;
+
+        // if(executa || num1 < num2){
+        //     console.log("A executar código...")
+        // }else{
+        //     console.log("Não foi possível executar...")
+        // }
+
+        // if(executa && num1 < num2){
+        //     console.log("A executar código...")
+        // }else{
+        //     console.log("Não foi possível executar...")
+        //     if(num1 > num2){
+        //         console.log("Num1 > Num2")
+        //     }else{
+        //         console.log("Num1 < Num2")
+        //     }
+        // }
+
+        //__________________________________________________________
+        //ex1 :
+        //Receber 2 notas,
+        //calcular média
+        // Imprimir se o aluno aprovado ou nao 
+        // notas de 0 a 10
+
+        let media = function(nota1, nota2){
+            let resultado = (nota1 + nota2)/2;
+
+            if(resultado >= 5){
+                console.log("Aluno aprovado", resultado)
+            }else if(resultado < 3){
+                console.log("Omg, gotta study!", resultado)
+            }else{
+                console.log("Aluno não aprovado", resultado)
+            }
+        }
+
+        media(5, 7);
+
+
+    </script>
+</body>
+</html>
